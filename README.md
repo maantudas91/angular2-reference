@@ -98,11 +98,6 @@ npm test
 npm run build.test.watch      # 1st window
 npm run karma.start           # 2nd window
 
-# code coverage (istanbul)
-# auto-generated at the end of `npm test`
-# view coverage report:
-npm run serve.coverage
-
 # e2e (aka. end-to-end, integration) - In three different shell windows
 # Make sure you don't have a global instance of Protractor
 
