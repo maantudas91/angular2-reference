@@ -56,12 +56,13 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'dist/**/!(*spec).js': ['coverage']
     },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['mocha'],
+    reporters: ['mocha', 'coverage'],
 
 
     // web server port
@@ -94,6 +95,15 @@ module.exports = function(config) {
         base: 'Chrome',
         flags: ['--no-sandbox']
       }
+    },
+
+    coverageReporter: {
+      dir: 'coverage/',
+        reporters: [
+          { type: 'text-summary' },
+          { type: 'json', subdir: '.', file: 'coverage-final.json' },
+          { type: 'html' }
+        ]
     },
 
     // Continuous Integration mode

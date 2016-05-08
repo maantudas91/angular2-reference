@@ -1,0 +1,5 @@
+---
+applications:
+  - name: noizwaves-angular2-reference
+    buildpack: nodejs_buildpack
+    command: npm run serve.prod
