@@ -4,6 +4,7 @@ import {NavbarComponent} from './navbar.component';
 import {ToolbarComponent} from './toolbar.component';
 import {NameListService} from '../shared/index';
 import {HomeComponent} from '../+home/index';
+import {ProductsComponent} from '../+products/index';
 
 @Component({
   selector: 'sd-app',
@@ -13,9 +14,14 @@ import {HomeComponent} from '../+home/index';
 })
 @RouteConfig([
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: HomeComponent
+  },
+  {
+    path: '/',
+    name: 'Products',
+    component: ProductsComponent
   }
 ])
 export class AppComponent {
