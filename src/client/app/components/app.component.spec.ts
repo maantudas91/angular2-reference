@@ -30,7 +30,7 @@ export function main() {
             let appDOMEl = rootTC.debugElement.children[0].nativeElement;
 
             expect(DOM.querySelectorAll(appDOMEl, 'sd-app > sd-navbar > nav > a')[0].href).toMatch(/http:\/\/localhost/);
-            expect(DOM.querySelectorAll(appDOMEl, 'sd-app > sd-navbar > nav > a')[0].textContent).toEqual('Products');
+            expect(DOM.querySelectorAll(appDOMEl, 'sd-app > sd-navbar > nav > a')[0].textContent).toEqual('PRODUCTS');
           });
       }));
   });
