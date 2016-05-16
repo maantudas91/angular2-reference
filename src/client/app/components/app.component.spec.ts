@@ -1,4 +1,4 @@
-import {TestComponentBuilder, describe, expect, inject, it, beforeEachProviders} from 'angular2/testing';
+import {TestComponentBuilder, expect, inject, it, beforeEachProviders} from 'angular2/testing';
 import {Component, provide} from 'angular2/core';
 import {DirectiveResolver} from 'angular2/compiler';
 import {Router, RouteRegistry, ROUTER_PRIMARY_COMPONENT} from 'angular2/router';

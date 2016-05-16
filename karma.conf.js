@@ -31,6 +31,8 @@ module.exports = function(config) {
       // beta.7 IE 11 polyfills from https://github.com/angular/angular/issues/7144
       'node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
 
+      'node_modules/sinon/pkg/sinon.js',
+
       { pattern: 'node_modules/angular2/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
       { pattern: 'dist/dev/**/*.js', included: false, watched: true },
